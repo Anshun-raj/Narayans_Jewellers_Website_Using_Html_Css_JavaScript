@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narayan Jewellers</title>
+    <link rel="stylesheet" type="text/css" href="Practice.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!----------HEADER------------>
+    <div class="header">
+        <div class="logo">
+           <h2>Narayan's <span>Yard</span></h2>
+        </div>
+        <div class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#review">Review</a></li>
+          <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-shopping-cart" id="cart" style="color: white; display: flex;align-items: center;">(0)</i>
+
+        </div>
+    </div>
+    <!------------Home-------------->
+    <div id="home" class="home">
+         <div class="homeInfo">
+            <h2>Jewelry is a whisper of who you are and what you cherish</h2>
+            <h5>"Quality means doing it right when no one is looking."</h5>
+            <p style="width: 80%;margin: auto;font-weight: 500;display: none;" id="data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, dignissimos praesentium, sit repellat consectetur a soluta ullam ipsam blanditiis deleniti veniam quidem aliquid repudiandae fugiat ratione consequatur? Nihil incidunt eligendi quisquam excepturi dolores voluptatibus aperiam esse veniam mollitia iusto fugiat ipsam nam in obcaecati nulla sed provident impedit deserunt, modi neque cum quod, voluptatum inventore culpa? Temporibus, dolore repudiandae. Distinctio est minima velit molestias tempore odit, dolore ab quod suscipit consequuntur dignissimos consectetur, facilis quae adipisci libero eum sapiente odio fugit non numquam! Minima id consequatur quis doloremque est excepturi fuga? Excepturi sapiente sit, saepe ad accusamus commodi perferendis possimus!</p>
+            <button class="btn" onclick="BtnText()">Know More</button>
+         </div>
+    </div>
+    <div class="about" id="about">
+        <h2 class="title">About us</h2>
+        <div class="aboutInfo">
+          <div class="aboutLeft">
+             <img src="./Image/about.jpg" title="Narayan's Sons"/>
+          </div>
+          <div class="aboutRight">
+             <h3>BioGraph</h3>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, tempora? Libero inventore nostrum rerum accusamus, quibusdam fuga reprehenderit obcaecati provident, cumque beatae distinctio ipsa odio, minima possimus qui esse minus velit omnis doloribus sint. Illum, ullam maxime voluptates atque, hic ea distinctio sed voluptatum architecto ex dolores itaque aliquid incidunt illo. Error veritatis esse asperiores laudantium quidem pariatur, in iure nesciunt illum iste incidunt vitae delectus amet quaerat expedita voluptatibus non dicta aspernatur beatae quam eum? Praesentium perferendis quae quisquam aliquam, reiciendis quam alias earum, iusto labore minima quis deleniti nam cum? Aut quo harum ut adipisci ratione quibusdam repellat iste numquam ea quis? In laborum similique vitae. Voluptatibus, officia eius obcaecati, esse iste vitae qui modi cupiditate vero possimus totam repellat perspiciatis illum aut, dolore ut! Officiis nulla praesentium facere? Magnam tempora laborum minima ipsam provident pariatur commodi beatae dolore ad facere, voluptatum perspiciatis similique quaerat in doloribus exercitationem aperiam dolorum architecto maxime. Quo quae ex voluptas nulla, reiciendis ducimus omnis incidunt perferendis iste libero quibusdam, eum neque! Molestias labore fuga expedita, fugit alias sed assumenda tempore? Incidunt tempore accusamus placeat a velit illum, laudantium, accusantium, consequuntur laborum suscipit sed necessitatibus. Dolor molestiae optio non quaerat ratione facilis laborum eaque temporibus accusamus, veniam voluptate dolore laudantium, expedita harum repellat nemo soluta distinctio quod? Aliquid maxime a sunt. Quod esse aperiam ex voluptas provident, odio ducimus voluptates excepturi modi, similique natus earum quaerat. Non minima fuga reprehenderit reiciendis, voluptates voluptate inventore. Ut, eligendi illum tempora id eos beatae soluta porro repellat quibusdam blanditiis rem laboriosam tenetur modi animi cum voluptas voluptatibus nisi ea ad repellendus nemo placeat asperiores incidunt vero.</p>
+          </div>
+        </div>
+    </div>
+    <div class="product" id="product">
+       <h2 class="title">Our <span>Product</span></h2>
+       <div class="productInfo">
+          <div class="productCard">
+             <img src="./Image/Necklace.jpg"/>
+             <h4>Necklace</h4>
+             <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>                
+            </div>
+            <button class="btn1" onclick="AddToCart()">Add To Cart</button>
+          </div>
+          <div class="productCard">
+             <img src="./Image/Earrings.jpg"/>
+             <h4>Earrings</h4>
+             <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>                
+            </div>
+            <button class="btn1" onclick="AddToCart()">Add To Cart</button>
+          </div>
+          <div class="productCard">
+             <img src="./Image/Earrings.jpg"/>
+             <h4>Bangle</h4>
+             <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>                
+            </div>
+            <button class="btn1" onclick="AddToCart()">Add To Cart</button>
+          </div>
+       </div>
+    </div>
+    <div class="review" id="review">
+        <h2 class="title">Our Reviewer</h2>
+        <div class="reviewInfo">
+           <div class="reviewCard">
+              <img src="./Image/review1.jpg"/>
+              <h4 id="name1">Micheal Stark</h4>
+               <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>                
+               </div>
+               <button class="btn1" id="btn2" onclick="callAlert1()">Connect</button>
+           </div>
+            <div class="reviewCard">
+              <img src="./Image/review2.jpg"/>
+              <h4 id="name2">Roman Reing</h4>
+               <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>                
+              </div>
+              <button class="btn1" id="btn3" onclick="callAlert2()">Connect</button>
+           </div>
+            <div class="reviewCard">
+              <img src="./Image/review3.jpg"/>
+              <h4 id="name3">Dwarne Bravo</h4>
+               <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half"></span>                
+              </div>
+              <button class="btn1" id="btn4" onclick="callAlert3()">Connect</button>
+           </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+       <h2 class="title">Contact Us</h2>
+       <div class="contactInfo">
+         <form method="post" action="">
+           <fieldset>
+              <input type="text" placeholder="Enter your name" required/>
+              <input type="email" placeholder="Enter your email" required/>
+              <input type="number" placeholder="enter your age" max="50" min="18" required/>
+              <input type="number" placeholder="Enter your number" required/>
+              <input type="text" placeholder="Enter your message"/>
+              <button type="submit">Submit</button>
+           </fieldset>
+         </form>
+       </div>
+    </div>
+    <script src="Practice.js"></script>
+</body>
+</html>

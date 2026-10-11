@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(35, 182, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.header .logo{
+    position: relative;
+    left: 1%;
+}
+
+.header .logo h2{
+    color: red;
+    font-size: 26px;
+}
+
+.header .logo h2:hover{
+    color: yellow;
+    transition: 0.5s ease-in-out;
+}
+
+.header .logo span{
+    color: white;
+}
+
+.header .logo span:hover{
+    color: yellow;
+    transition: 0.5s ease-in-out;
+}
+
+.header .navbar{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header .navbar li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header .navbar a:hover{
+  color: yellow;
+  transition: 0.5s ease-in-out;
+}
+
+.home{
+    width: 100%;
+    background-color: yellow;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home .homeInfo h2{
+   font-size: 50px;
+   font-weight: bold;
+   padding: 10px 0 10px 0;
+}
+
+.home .homeInfo h5{
+    color: red;
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+}
+
+.home .homeInfo .btn{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+.home .homeInfo .btn:hover{
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+
+.about{
+    width: 100%;
+    background-color: yellow;
+    height: 94vh;
+    text-align: center;
+}
+
+.about .title{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    color: red;
+}
+
+.about .aboutInfo{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.about .aboutInfo .aboutLeft{
+    width: 50%;
+}
+
+.about .aboutInfo .aboutLeft img{
+    width: 480px;
+    height: 450px;
+    border: 3px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.about .aboutInfo .aboutRight{
+    width: 50%;
+}
+
+.about .aboutInfo .aboutRight h3{
+    color: red;
+    font-size: 30px;
+}
+
+.about .aboutInfo .aboutRight p{
+    font-weight: 600;
+}
+
+.product{
+    width: 100%;
+    background-color: yellow;
+    height: 94vh;
+    text-align: center;
+}
+
+.product .title{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    color: red;
+}
+
+.product .productInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product .productInfo .productCard{
+    width: 400px;
+    height: 450px;
+    border: 3px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .productInfo .productCard img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.product .productInfo .productCard h4{
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+.product .productInfo .productCard .rating{
+    color: red;
+    padding: 5px 0 5px 0;
+}
+
+.product .productInfo .productCard .btn1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+.product .productInfo .productCard .btn1:hover{
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+
+.review{
+    width: 100%;
+    background-color: yellow;
+    height: 94vh;
+    text-align: center;
+}
+
+.review .title{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    color: red;
+}
+
+.review .reviewInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.review .reviewInfo .reviewCard{
+    width: 400px;
+    height: 450px;
+    border: 3px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review .reviewInfo .reviewCard img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.review .reviewInfo .reviewCard h4{
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+.review .reviewInfo .reviewCard .rating{
+    color: red;
+    padding: 5px 0 5px 0;
+}
+
+.review .reviewInfo .reviewCard .btn1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+.review .reviewInfo .reviewCard .btn1:hover{
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+
+.contact{
+    width: 100%;
+    height: 94vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .title{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    color: red;
+}
+
+.contact .contactInfo form{
+    width: 600px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.contact .contactInfo form fieldset{
+    border: 3px solid red;
+    padding: 40px 0;
+    border-radius: 4px;
+}
+
+.contact .contactInfo form input {
+    width: 90%;
+    height: 4.5vh;
+    margin: 15px;
+}  
+
+.contact .contactInfo form input::placeholder{
+  padding: 0 5px;
+}
+
+.contact .contactInfo form button {
+display: block;
+position: relative;
+left: 41%;
+margin: 15px 0;
+padding: 8px 20px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+background-color: red;
+color: #fff;
+transition: 0.5s all;
+}
+
+.contact .contactInfo form button:hover{
+ color: red;
+ background-color: black;
+}
+
